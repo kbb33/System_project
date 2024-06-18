@@ -1,0 +1,13 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://${ip}:3306/teacher2024?useSSL=false&useUnicode=true&characterEncoding=UTF-8&serverTimezone=GMT%2b8
+    username: root
+    password: 123456
+  servlet:
+    multipart:
+      max-file-size: 50MB #设置限制上传的文件大小
+      max-request-size: 50MB
+server:
+  port: 9090
+ip: localhost
